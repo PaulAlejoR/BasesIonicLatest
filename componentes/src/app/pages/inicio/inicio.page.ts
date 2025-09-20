@@ -38,7 +38,13 @@ export class InicioPage implements OnInit {
       icon: 'calendar-outline',
       name: 'DateTime',
       redirectTo: '/date-time'
+    }, 
+    {
+      icon: 'card-outline',
+      name: 'Cards',
+      redirectTo: '/card'
     }
+    
   ];
 
   constructor() { }
