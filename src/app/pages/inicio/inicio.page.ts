@@ -33,6 +33,26 @@ export class InicioPage implements OnInit {
       icon: 'beaker-outline',
       name: 'Avatar',
       redirectTo: '/avatar'
+    },
+    {
+      icon: 'radio-button-off-outline',
+      name: 'Buttons',
+      redirectTo: '/button'
+    },
+    {
+      icon: 'checkmark-circle-outline',
+      name: 'Check Box',
+      redirectTo: '/check'
+    },
+    {
+      icon: 'car-outline',
+      name: 'Fab',
+      redirectTo: '/fab'
+    },
+    {
+      icon: 'infinite-outline',
+      name: 'Infinite-Scroll',
+      redirectTo: '/infinite'
     }
   ];
 

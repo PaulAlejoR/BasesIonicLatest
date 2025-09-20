@@ -1,2 +1,98 @@
 // For information on how to create your own theme, please see:
 // http://ionicframework.com/docs/theming/
+:root{
+    --ion-color-primary: #0054e9;
+	--ion-color-primary-rgb: 0,84,233;
+	--ion-color-primary-contrast: #ffffff;
+	--ion-color-primary-contrast-rgb: 255,255,255;
+	--ion-color-primary-shade: #004acd;
+	--ion-color-primary-tint: #1a65eb;
+
+    /*
+    color de prueba para el color primario, se puede quedar al final para el build
+    --ion-color-primary: #38ffb3;
+	--ion-color-primary-rgb: 56,255,179;
+	--ion-color-primary-contrast: #000000;
+	--ion-color-primary-contrast-rgb: 0,0,0;
+	--ion-color-primary-shade: #31e09e;
+	--ion-color-primary-tint: #4cffbb;
+    */
+
+    // Añadiendo los colores para el componente (pagina) de fab (Floating Action Button)
+    // Color de youtube
+    --ion-color-youtube: #FF0000;
+	--ion-color-youtube-rgb: 255,0,0;
+	--ion-color-youtube-contrast: #ffffff;
+	--ion-color-youtube-contrast-rgb: 0,0,0;
+	--ion-color-youtube-shade: #e00000;
+	--ion-color-youtube-tint: #ff1a1a;
+
+    // Color de facebook
+    --ion-color-facebook: #1877F2;
+	--ion-color-facebook-rgb: 24,119,242;
+	--ion-color-facebook-contrast: #ffffff;
+	--ion-color-facebook-contrast-rgb: 0,0,0;
+	--ion-color-facebook-shade: #1569d5;
+	--ion-color-facebook-tint: #2f85f3;
+
+    // Color de Twitter
+    --ion-color-twitter: #1DA1F2;
+	--ion-color-twitter-rgb: 29,161,242;
+	--ion-color-twitter-contrast: #ffffff;
+	--ion-color-twitter-contrast-rgb: 0,0,0;
+	--ion-color-twitter-shade: #1a8ed5;
+	--ion-color-twitter-tint: #34aaf3;
+
+    // Color de snapchat
+    --ion-color-snapchat: #FFFC00;
+	--ion-color-snapchat-rgb: 255,252,0;
+	--ion-color-snapchat-contrast: #ffffff;
+	--ion-color-snapchat-contrast-rgb: 0,0,0;
+	--ion-color-snapchat-shade: #e0de00;
+	--ion-color-snapchat-tint: #fffc1a;
+
+    
+
+}
+
+// Creando las clases de ionic para usar en los componentes de Ionic que lo permita,
+// para la pagina (componente) fab
+// Clase para el color de YouTube
+.ion-color-youtube {
+	--ion-color-base: var(--ion-color-youtube);
+	--ion-color-base-rgb: var(--ion-color-youtube-rgb);
+	--ion-color-contrast: var(--ion-color-youtube-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-youtube-contrast-rgb);
+	--ion-color-shade: var(--ion-color-youtube-shade);
+	--ion-color-tint: var(--ion-color-youtube-tint);
+}
+
+// Clase para el color de Facebook
+.ion-color-facebook {
+	--ion-color-base: var(--ion-color-facebook);
+	--ion-color-base-rgb: var(--ion-color-facebook-rgb);
+	--ion-color-contrast: var(--ion-color-facebook-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-facebook-contrast-rgb);
+	--ion-color-shade: var(--ion-color-facebook-shade);
+	--ion-color-tint: var(--ion-color-facebook-tint);
+}
+
+// Clase para el color de twitter
+.ion-color-twitter {
+	--ion-color-base: var(--ion-color-twitter);
+	--ion-color-base-rgb: var(--ion-color-twitter-rgb);
+	--ion-color-contrast: var(--ion-color-twitter-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-twitter-contrast-rgb);
+	--ion-color-shade: var(--ion-color-twitter-shade);
+	--ion-color-tint: var(--ion-color-twitter-tint);
+}
+
+// Clase para el color de snapchat
+.ion-color-snapchat {
+	--ion-color-base: var(--ion-color-snapchat);
+	--ion-color-base-rgb: var(--ion-color-snapchat-rgb);
+	--ion-color-contrast: var(--ion-color-snapchat-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-snapchat-contrast-rgb);
+	--ion-color-shade: var(--ion-color-snapchat-shade);
+	--ion-color-tint: var(--ion-color-snapchat-tint);
+}

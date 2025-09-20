@@ -1,0 +1,59 @@
+<app-header titulo="Fab"></app-header>
+
+<ion-content>
+
+
+  <!-- fab placed to the top end 
+    La propiedad fix es obligatoria para que se quede anclado el boton al scrolear 
+  -->
+
+  <!--
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  -->
+
+
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add-outline"></ion-icon>
+    </ion-fab-button>
+
+    <!--Despliegue de mas opciones del boton hacia abajo-->
+    <ion-fab-list side="bottom">
+      <ion-fab-button color="youtube"><ion-icon name="logo-youtube"></ion-icon></ion-fab-button>
+      <ion-fab-button color="facebook"><ion-icon name="logo-facebook"></ion-icon></ion-fab-button>
+      <ion-fab-button color="twitter"><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+
+    <!--Despliegue de mas opciones del boton hacia la izquierda-->
+    <ion-fab-list side="start">
+      <ion-fab-button color="snapchat"><ion-icon name="logo-snapchat"></ion-icon></ion-fab-button>
+      <ion-fab-button color="github"><ion-icon name="logo-github"></ion-icon></ion-fab-button>
+      <ion-fab-button><ion-icon name="logo-x"></ion-icon></ion-fab-button>
+      <!--<ion-fab-button color="spotify"><ion-icon name="logo-spotify"></ion-icon></ion-fab-button>-->
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-list>
+    <ion-item *ngFor="let item of data; let i = index">
+      <ion-label>Item {{ i + 1 }}</ion-label>
+    </ion-item>
+  </ion-list>
+
+  
+
+</ion-content>
+
+
+<ion-footer>
+
+  <ion-toolbar>
+
+    <ion-title>Footer</ion-title>
+
+  </ion-toolbar>
+
+</ion-footer>

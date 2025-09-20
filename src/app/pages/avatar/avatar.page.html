@@ -5,21 +5,38 @@
       <ion-back-button defaultHref="/"></ion-back-button>
     </ion-buttons>
 
-    <ion-title>avatar</ion-title>
+    <ion-title color="primary">Avatar</ion-title>
 
     <ion-buttons slot="end">
       <ion-avatar>
-        <img alt="" src="/src/assets/icon/favicon.png"/>
         
+        <ion-img src="/src/assets/icon/lego-logo.jpg"></ion-img>
       </ion-avatar>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">avatar</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  
+  <ion-chip color="primary" outline="true"
+            *ngFor="let item of [1,1,1,1,1,1,1,1]"
+  >
+    <ion-avatar>
+      <img src="/src/assets/icon/favicon.png"/>
+    </ion-avatar>
+    <ion-label>Default</ion-label>
+  </ion-chip>
+  
+  <ion-list *ngFor="let item of [1,1,1,1,1,1,1,1]">
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="/src/assets/icon/favicon.png"/>
+      </ion-avatar>
+
+
+      <ion-label>Logos avatar</ion-label>
+
+
+    </ion-item>
+  </ion-list>
 </ion-content>
