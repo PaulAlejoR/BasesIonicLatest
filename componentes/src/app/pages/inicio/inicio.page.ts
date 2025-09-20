@@ -33,6 +33,11 @@ export class InicioPage implements OnInit {
       icon: 'beaker-outline',
       name: 'Avatar',
       redirectTo: '/avatar'
+    },
+    {
+      icon: 'calendar-outline',
+      name: 'DateTime',
+      redirectTo: '/date-time'
     }
   ];
 
