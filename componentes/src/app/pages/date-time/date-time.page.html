@@ -1,0 +1,46 @@
+<app-header titulo="date time"></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Datos de nacimiento</ion-label>
+    </ion-list-header>
+
+    <ion-item button="true" (click)="setOpen(true)">
+      <ion-label>Fecha de nacimiento</ion-label>
+      <ion-text slot="end">{{ fechaNacimiento | date: 'dd/MM/yyyy' }}</ion-text>
+    </ion-item>
+
+    <ion-modal
+      [isOpen]="isModalOpen"
+      (didDismiss)="setOpen(false)"
+      [breakpoints]="[0, 0.4]"
+      [initialBreakpoint]="0.4"
+    >
+      <ng-template>
+        <div class="datetime-container">
+          <ion-datetime
+            presentation="date"
+            [preferWheel]="true"
+            [value]="fechaNacimiento.toISOString()"
+            (ionChange)="cambioFecha($event)"
+            (ionCancel)="setOpen(false)"
+            [showDefaultButtons]="true"
+          >
+            <span slot="title">Seleccione una fecha</span>
+          </ion-datetime>
+        </div>
+      </ng-template>
+    </ion-modal>
+
+    <ion-list-header>
+      <ion-label>Restricciones</ion-label>
+    </ion-list-header>
+    
+    <ion-item button="true" (click)="setOpen(true)">
+      <ion-label>Min y max</ion-label>
+      <ion-text slot="end">{{ fechaNacimiento | date: 'dd/MM/yyyy' }}</ion-text>
+    </ion-item>
+    
+  </ion-list>
+</ion-content>
