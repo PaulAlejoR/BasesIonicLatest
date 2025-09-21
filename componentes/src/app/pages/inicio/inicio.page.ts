@@ -119,6 +119,11 @@ export class InicioPage implements OnInit {
       name: 'Tabs',
       redirectTo: '/tabs'
     },
+    {
+      icon: 'pricetag-outline',
+      name: 'Toast',
+      redirectTo: '/toast'
+    }
     
   ];
 
