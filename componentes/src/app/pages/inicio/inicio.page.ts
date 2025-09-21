@@ -83,6 +83,26 @@ export class InicioPage implements OnInit {
       icon: 'phone-portrait-outline',
       name: 'modal',
       redirectTo: '/modal'
+    },
+    {
+      icon: 'logo-windows',
+      name: 'Popover',
+      redirectTo: '/popover'
+    },
+    {
+      icon: 'code-working-outline',
+      name: 'Progress Bar',
+      redirectTo: '/progress'
+    },
+    {
+      icon: 'copy-outline',
+      name: 'Segment',
+      redirectTo: '/segment'
+    },
+    {
+      icon: 'albums-outline',
+      name: 'Slides',
+      redirectTo: '/slides'
     }
     
   ];
