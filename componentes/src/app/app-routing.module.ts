@@ -99,6 +99,15 @@ const routes: Routes = [
     path: 'toast',
     loadChildren: () => import('./pages/toast/toast.module').then( m => m.ToastPageModule)
   },
+  {
+    path: 'grid',
+    loadChildren: () => import('./pages/grid/grid.module').then( m => m.GridPageModule)
+  },
+  {
+    path: 'input',
+    loadChildren: () => import('./pages/input/input.module').then( m => m.InputPageModule)
+  },
+
 
 
 ];

@@ -3,11 +3,9 @@ import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
-interface Componente {
-  icon: string,
-  name: string,
-  redirectTo: string
-}
+import { Componente } from 'src/app/interfaces/interfaces';
+import { Observable } from 'rxjs';
+import { DataService } from 'src/app/services/data';
 
 @Component({
   selector: 'app-inicio',
@@ -18,118 +16,12 @@ interface Componente {
 })
 export class InicioPage implements OnInit {
 
-  componentes: Componente[] = [
-    {
-      icon: 'american-football-outline',
-      name: 'Action Sheet',
-      redirectTo: '/action-sheet'
-    },
-    {
-      icon: 'alert-circle-outline',
-      name: 'Alert',
-      redirectTo: '/alert'
-    },
-    {
-      icon: 'beaker-outline',
-      name: 'Avatar',
-      redirectTo: '/avatar'
-    },
-    {
-      icon: 'radio-button-off-outline',
-      name: 'Buttons',
-      redirectTo: '/button'
-    },
-    {
-      icon: 'card-outline',
-      name: 'Cards',
-      redirectTo: '/card'
-    }, 
-    {
-      icon: 'checkmark-circle-outline',
-      name: 'Check Box',
-      redirectTo: '/check'
-    },
-    {
-      icon: 'calendar-outline',
-      name: 'DateTime',
-      redirectTo: '/date-time'
-    }, 
-    {
-      icon: 'car-outline',
-      name: 'Fab',
-      redirectTo: '/fab'
-    },
-    {
-      icon: 'infinite-outline',
-      name: 'Infinite-Scroll',
-      redirectTo: '/infinite'
-    },
-    {
-      icon: 'list-outline',
-      name: 'List - Sliding',
-      redirectTo: '/list'
-    },
-    {
-      icon: 'reorder-three-outline',
-      name: 'Lists - Reorder',
-      redirectTo: '/list-reorder'
-    },
-    {
-      icon: 'refresh-circle-outline',
-      name: 'Loading',
-      redirectTo: '/loading'
-    },
-    {
-      icon: 'phone-portrait-outline',
-      name: 'Modal',
-      redirectTo: '/modal'
-    },
-    {
-      icon: 'tablet-portrait-outline',
-      name: 'Popover',
-      redirectTo: '/popover'
-    },
-    {
-      icon: 'code-working-outline',
-      name: 'Progress Bar',
-      redirectTo: '/progress'
-    },
-    {
-      icon: 'refresh-outline',
-      name: 'Refresher',
-      redirectTo: '/refresher'
-    },
-    {
-      icon: 'search-outline',
-      name: 'Search',
-      redirectTo: '/search'
-    },
-    {
-      icon: 'copy-outline',
-      name: 'Segment',
-      redirectTo: '/segment'
-    },
-    {
-      icon: 'albums-outline',
-      name: 'Slides',
-      redirectTo: '/slides'
-    }, 
-    {
-      icon: 'cog-outline',
-      name: 'Tabs',
-      redirectTo: '/tabs'
-    },
-    {
-      icon: 'pricetag-outline',
-      name: 'Toast',
-      redirectTo: '/toast'
-    }
-    
-  ];
+  componentes!: Observable<Componente[]>;
 
-  constructor() { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
+    this.componentes = this.dataService.getMenuOpts();
   }
   
 }
