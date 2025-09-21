@@ -103,6 +103,26 @@ export class InicioPage implements OnInit {
       icon: 'albums-outline',
       name: 'Slides',
       redirectTo: '/slides'
+    }, 
+    {
+      icon: 'refresh-outline',
+      name: 'Refresher',
+      redirectTo: '/refresher'
+    },
+    {
+      icon: 'search-outline',
+      name: 'Search',
+      redirectTo: '/search'
+    },
+    {
+      icon: 'cog-outline',
+      name: 'Tabs',
+      redirectTo: '/tabs'
+    },
+    {
+      icon: 'pricetag-outline',
+      name: 'Toast',
+      redirectTo: '/toast'
     }
     
   ];

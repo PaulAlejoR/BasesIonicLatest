@@ -66,7 +66,8 @@ const routes: Routes = [
   {
     path: 'modal-info',
     loadChildren: () => import('./pages/modal-info/modal-info.module').then( m => m.ModalInfoPageModule)
-  },  {
+  },
+  {
     path: 'popover',
     loadChildren: () => import('./pages/popover/popover.module').then( m => m.PopoverPageModule)
   },
@@ -82,6 +83,23 @@ const routes: Routes = [
     path: 'slides',
     loadChildren: () => import('./pages/slides/slides.module').then( m => m.SlidesPageModule)
   },
+  {
+    path: 'refresher',
+    loadChildren: () => import('./pages/refresher/refresher.module').then( m => m.RefresherPageModule)
+  },
+  {
+    path: 'search',
+    loadChildren: () => import('./pages/search/search.module').then( m => m.SearchPageModule)
+  },
+  {
+    path: 'tabs',
+    loadChildren: () => import('./pages/tabs/tabs.module').then( m => m.TabsPageModule)
+  },
+  {
+    path: 'toast',
+    loadChildren: () => import('./pages/toast/toast.module').then( m => m.ToastPageModule)
+  },
+
 
 ];
 

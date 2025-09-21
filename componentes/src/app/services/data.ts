@@ -12,6 +12,10 @@ export class DataService {
     return this.http.get('https://jsonplaceholder.typicode.com/users');
   }
   
+  getAlbums() { 
+    return this.http.get<any[]>('https://jsonplaceholder.typicode.com/albums');
+  }
+  
   getHeroes(){
     return this.http.get<Comment[]>('/assets/data/superheroes.json');
   }
