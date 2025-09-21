@@ -1,25 +1,25 @@
-import { Component, OnInit } from '@angular/core';
-import { DataService } from 'src/app/services/data';
+import { Component, OnInit } from "@angular/core";
+import { DataService } from "src/app/services/data";
 
 @Component({
-  selector: 'app-search',
-  templateUrl: './search.page.html',
-  styleUrls: ['./search.page.scss'],
+  selector: "app-search",
+  templateUrl: "./search.page.html",
+  styleUrls: ["./search.page.scss"],
   standalone: false
 })
 export class SearchPage implements OnInit {
   albums: any[] = [];
-  constructor( private dataService: DataService ) { }
+  textoBuscar: string = "";
+
+  constructor(private dataService: DataService) {}
 
   ngOnInit() {
-    this.dataService.getAlbums().subscribe(
-      albums => { 
-        console.log(albums);
-        this.albums = albums;
-      });
+    this.dataService.getAlbums().subscribe((albums) => {
+      this.albums = albums;
+    });
   }
 
-  onSearchChange(event: any) { 
-    console.log(event);
+  onSearchChange(event: any) {
+    this.textoBuscar = event.detail.value;
   }
 }

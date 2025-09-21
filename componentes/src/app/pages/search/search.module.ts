@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { SearchPageRoutingModule } from './search-routing.module';
 
 import { SearchPage } from './search.page';
-import { HeaderComponent } from 'src/app/components/header/header.component';
+import { PipesModule } from 'src/app/pipes/pipes-module';
 
 @NgModule({
   imports: [
@@ -15,7 +15,7 @@ import { HeaderComponent } from 'src/app/components/header/header.component';
     FormsModule,
     IonicModule,
     SearchPageRoutingModule,
-    HeaderComponent
+    PipesModule
   ],
   declarations: [SearchPage]
 })
