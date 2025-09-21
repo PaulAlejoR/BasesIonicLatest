@@ -48,6 +48,11 @@ export class InicioPage implements OnInit {
       icon: 'refresh-circle-outline',
       name: 'loading',
       redirectTo: '/loading'
+    },
+    {
+      icon: 'phone-portrait-outline',
+      name: 'modal',
+      redirectTo: '/modal'
     }
     
   ];
