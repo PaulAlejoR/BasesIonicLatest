@@ -1,0 +1,77 @@
+ion-content {
+  --background: #000; // Fondo oscuro para el efecto
+  --padding-top: 0;
+  --padding-bottom: 0;
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+.full-screen-swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding: 20px;
+  background: white; // El color de fondo de cada slide
+}
+
+ion-card {
+  height: 350px;
+  width: 90%;
+  max-width: 400px;
+  background-color: transparent;
+  box-shadow: none;
+  border-radius: 20px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.slide-image {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  margin-top: 20px;
+}
+
+ion-card-header,
+ion-card-content {
+  position: relative;
+  top: 0;
+  text-align: center;
+}
+
+ion-card-subtitle {
+  font-weight: bold;
+  color: var(--ion-color-primary);
+  margin-top: 10px;
+}
+
+ion-button {
+  width: 80%;
+  max-width: 300px;
+  --background: var(--ion-color-primary);
+  --color: white;
+}
+
+.last-slide {
+  justify-content: flex-end;
+  padding-bottom: 50px;
+}
+
+// Estilos del efecto creativo
+swiper-slide {
+  background-color: var(--ion-color-light, #fff); // Fondo de los slides
+}
+
+// Estilos del efecto creativo (para los lados)
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none !important;
+}
