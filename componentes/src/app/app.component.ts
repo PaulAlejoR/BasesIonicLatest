@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Componente } from './interfaces/interfaces';
+import { DataService } from './services/data';
+import { Platform } from '@ionic/angular';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +11,20 @@ import { Component } from '@angular/core';
   standalone: false,
 })
 export class AppComponent {
-  constructor() {}
+  componentes!: Observable<Componente[]>;
+
+
+ /*   ngOnInit() {
+      this.componentes = this.dataService.getMenuOpts();
+    }*/
+  constructor(private dataService: DataService, private platform: Platform) {
+    this.initializeApp();
+  }
+  initializeApp() {
+    this.platform.ready().then(() => {
+      //this.statusBar.styleDefault();
+      //this.splashScreen.hide();
+      this.componentes = this.dataService.getMenuOpts();
+    });
+  }
 }
