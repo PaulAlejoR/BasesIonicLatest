@@ -114,6 +114,11 @@ export class InicioPage implements OnInit {
       name: 'Search',
       redirectTo: '/search'
     },
+    {
+      icon: 'cog-outline',
+      name: 'Tabs',
+      redirectTo: '/tabs'
+    },
     
   ];
 
