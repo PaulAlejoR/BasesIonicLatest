@@ -13,8 +13,6 @@ export class ToastPage implements OnInit {
 
   ngOnInit() {
   }
-
-  onClick() { }
   
   async presentToast() {
     const toast = await this.toastController.create({
