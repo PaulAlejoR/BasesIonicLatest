@@ -40,10 +40,20 @@ export class InicioPage implements OnInit {
       redirectTo: '/button'
     },
     {
+      icon: 'card-outline',
+      name: 'Cards',
+      redirectTo: '/card'
+    }, 
+    {
       icon: 'checkmark-circle-outline',
       name: 'Check Box',
       redirectTo: '/check'
     },
+    {
+      icon: 'calendar-outline',
+      name: 'DateTime',
+      redirectTo: '/date-time'
+    }, 
     {
       icon: 'car-outline',
       name: 'Fab',
@@ -65,27 +75,17 @@ export class InicioPage implements OnInit {
       redirectTo: '/list-reorder'
     },
     {
-      icon: 'calendar-outline',
-      name: 'DateTime',
-      redirectTo: '/date-time'
-    }, 
-    {
-      icon: 'card-outline',
-      name: 'Cards',
-      redirectTo: '/card'
-    }, 
-    {
       icon: 'refresh-circle-outline',
-      name: 'loading',
+      name: 'Loading',
       redirectTo: '/loading'
     },
     {
       icon: 'phone-portrait-outline',
-      name: 'modal',
+      name: 'Modal',
       redirectTo: '/modal'
     },
     {
-      icon: 'logo-windows',
+      icon: 'tablet-portrait-outline',
       name: 'Popover',
       redirectTo: '/popover'
     },
@@ -93,6 +93,16 @@ export class InicioPage implements OnInit {
       icon: 'code-working-outline',
       name: 'Progress Bar',
       redirectTo: '/progress'
+    },
+    {
+      icon: 'refresh-outline',
+      name: 'Refresher',
+      redirectTo: '/refresher'
+    },
+    {
+      icon: 'search-outline',
+      name: 'Search',
+      redirectTo: '/search'
     },
     {
       icon: 'copy-outline',
@@ -104,16 +114,6 @@ export class InicioPage implements OnInit {
       name: 'Slides',
       redirectTo: '/slides'
     }, 
-    {
-      icon: 'refresh-outline',
-      name: 'Refresher',
-      redirectTo: '/refresher'
-    },
-    {
-      icon: 'search-outline',
-      name: 'Search',
-      redirectTo: '/search'
-    },
     {
       icon: 'cog-outline',
       name: 'Tabs',
