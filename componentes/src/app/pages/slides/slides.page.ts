@@ -1,16 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { register } from "swiper/element/bundle";
 
+register();
 @Component({
-  selector: 'app-slides',
-  standalone: true,
-  templateUrl: './slides.page.html',
-  styleUrls: ['./slides.page.scss'],
+  selector: "app-slides",
+  templateUrl: "./slides.page.html",
+  styleUrls: ["./slides.page.scss"],
+  standalone: false
 })
 export class SlidesPage implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
