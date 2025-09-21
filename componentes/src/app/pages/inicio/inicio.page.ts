@@ -108,7 +108,12 @@ export class InicioPage implements OnInit {
       icon: 'refresh-outline',
       name: 'Refresher',
       redirectTo: '/refresher'
-    }
+    },
+    {
+      icon: 'search-outline',
+      name: 'Search',
+      redirectTo: '/search'
+    },
     
   ];
 
