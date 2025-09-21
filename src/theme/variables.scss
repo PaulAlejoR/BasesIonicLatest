@@ -51,6 +51,13 @@
 	--ion-color-snapchat-shade: #e0de00;
 	--ion-color-snapchat-tint: #fffc1a;
 
+	// Color para pruebas para los componentes de list-reorder
+	--ion-color-list-reorder: #38ffb3;
+	--ion-color-list-reorder-rgb: 56,255,179;
+	--ion-color-list-reorder-contrast: #000000;
+	--ion-color-list-reorder-contrast-rgb: 0,0,0;
+	--ion-color-list-reorder-shade: #31e09e;
+	--ion-color-list-reorder-tint: #4cffbb;
     
 
 }
@@ -95,4 +102,14 @@
 	--ion-color-contrast-rgb: var(--ion-color-snapchat-contrast-rgb);
 	--ion-color-shade: var(--ion-color-snapchat-shade);
 	--ion-color-tint: var(--ion-color-snapchat-tint);
+}
+
+// Clase para las pruebas del componente List-Reorder
+.ion-color-list-reorder {
+	--ion-color-base: var(--ion-color-list-reorder);
+	--ion-color-base-rgb: var(--ion-color-list-reorder-rgb);
+	--ion-color-contrast: var(--ion-color-list-reorder-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-list-reorder-contrast-rgb);
+	--ion-color-shade: var(--ion-color-list-reorder-shade);
+	--ion-color-tint: var(--ion-color-list-reorder-tint);
 }

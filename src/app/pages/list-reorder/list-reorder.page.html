@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" color="list-reorder">
+        Regresar
+      </ion-back-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button  (click)="bandera = !bandera" color="list-reorder">
+        <ion-icon slot="icon-only" name="toggle-outline" ></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title color="list-reorder">List - Reorder</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+
+    <ion-reorder-group [disabled]="bandera"
+                      (ionItemReorder)="doReorder( $event )"
+    >
+
+      <ion-item *ngFor="let p of personajes">
+        <ion-label>{{ p }}</ion-label>
+        <ion-reorder slot="end">
+
+          <!-- Para cambiar el logo del boton se tiene que poner el icono dentro
+            de ion-reorder 
+          -->
+          <ion-icon name="pizza-outline"></ion-icon>
+        </ion-reorder>
+      </ion-item>
+
+    </ion-reorder-group>
+
+    
+  </ion-list>
+</ion-content>
